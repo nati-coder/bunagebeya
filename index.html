@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BunaGebeya Ethiopia | Premium Coffee Marketplace</title>
+    <link rel="icon" type="image/png" href="coffee.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Cultural Pattern Background -->
+    <div class="cultural-pattern"></div>
+
+    <!-- Notification -->
+    <div class="notification"></div>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-content">
+                <div data-translate="welcome">Welcome to BunaGebeya Ethiopia - The Birthplace of Coffee</div>
+                <div class="language-selector">
+                    <div class="language-btn">
+                        <span data-translate="current-language">English</span>
+                        <i class="fas fa-chevron-down" style="margin-left: 8px;"></i>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="language-option" data-lang="en">English</div>
+                        <div class="language-option" data-lang="am">አማርኛ</div>
+                        <div class="language-option" data-lang="om">Afaan Oromoo</div>
+                        <div class="language-option" data-lang="so">Soomaali</div>
+                        <div class="language-option" data-lang="ti">ትግርኛ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cultural Border -->
+    <div class="cultural-border"></div>
+
+    <!-- Main Header -->
+    <header>
+        <div class="container">
+            <div class="main-header">
+                <div class="header-content">
+                    <a href="#" class="logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGZxodUgLrDsrZ0RJ6reC9Ac898CP24EswdDal5H7L4yeZWT7WcCP1mE&s" 
+                            alt="Leaf Icon" 
+                            width="30" 
+                            height="30"
+                            style="margin-right:8px;">
+                        <span class="logo-text">BunaGebeya</span>
+                        <span class="logo-short">CC</span>
+                    </a>
+                    
+                    <div class="search-container">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search for Ethiopian coffee..." data-translate="search-placeholder">
+                            <button><i class="fas fa-search"></i></button>
+                            <div class="search-suggestions">
+                                <div class="search-suggestion">Guji Coffee</div>
+                                <div class="search-suggestion">Harrar Coffee</div>
+                                <div class="search-suggestion">Yirgachefe Coffee</div>
+                                <div class="search-suggestion">Sidama Coffee</div>
+                                <div class="search-suggestion">Ethiopian Coffee Beans</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <!-- Enhanced Account Section -->
+                        <div class="header-action account-action">
+                            <div class="user-profile">
+                                <div class="user-avatar"><i class="fas fa-key"></i></div>
+                                <div class="user-dropdown">
+                                    <div class="user-dropdown-item" id="view-profile">
+                                        <i class="fas fa-user"></i>
+                                        <span data-translate="view-profile">View Profile</span>
+                                    </div>
+                                    <div class="user-dropdown-item" id="order-history">
+                                        <i class="fas fa-history"></i>
+                                        <span data-translate="order-history">Order History</span>
+                                    </div>
+                                    <div class="user-dropdown-divider"></div>
+                                    <div class="user-dropdown-item" id="logout">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <span data-translate="logout">Logout</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="action-text" data-translate="account">Account</span>
+                        </div>
+                        
+                        <!-- Wishlist Icon -->
+                        <div class="header-action wishlist-action">
+                            <i class="fas fa-heart"></i>
+                            <span class="action-text" data-translate="wishlist">Wishlist</span>
+                            <div class="cart-count wishlist-count">0</div>
+                        </div>
+                        
+                        <div class="header-action cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="action-text" data-translate="cart">Cart</span>
+                            <div class="cart-count">0</div>
+                        </div>
+                        <button class="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="main-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#" data-translate="all-coffees">All Coffees</a></li>
+                    <li><a href="#" data-translate="guji-region">Guji Region</a></li>
+                    <li><a href="#" data-translate="harrar-region">Harrar Region</a></li>
+                    <li><a href="#" data-translate="yirgachefe-region">Yirgachefe Region</a></li>
+                    <li><a href="#" data-translate="sidama-region">Sidama Region</a></li>
+                    <li><a href="#" data-translate="new-arrivals">New Arrivals</a></li>
+                    <li><a href="#" data-translate="best-sellers">Best Sellers</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2 data-translate="menu">Menu</h2>
+            <button class="close-sidebar"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <ul class="sidebar-links">
+            <li><a href="#" data-translate="all-coffees">All Coffees</a></li>
+            <li><a href="#" data-translate="guji-region">Guji Region</a></li>
+            <li><a href="#" data-translate="harrar-region">Harrar Region</a></li>
+            <li><a href="#" data-translate="yirgachefe-region">Yirgachefe Region</a></li>
+            <li><a href="#" data-translate="sidama-region">Sidama Region</a></li>
+            <li><a href="#" data-translate="new-arrivals">New Arrivals</a></li>
+            <li><a href="#" data-translate="best-sellers">Best Sellers</a></li>
+            <li><a href="#" data-translate="about">About Us</a></li>
+            <li><a href="#contact" data-translate="contact">Contact</a></li>
+            <li><a href="#" data-translate="faq">FAQ</a></li>
+        </ul>
+    </div>
+
+    <!-- Left Sidebar Filter -->
+    <div class="left-sidebar-filter">
+        <div class="left-sidebar-header">
+            <h2 data-translate="filter-title">Filter Products</h2>
+            <button class="close-left-sidebar"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-header">
+                <div class="filter-title">
+                    <i class="fas fa-filter"></i>
+                    <span data-translate="filter-title">Filter Products</span>
+                </div>
+                <div class="filter-actions">
+                    <button class="filter-btn secondary" id="reset-filters">
+                        <i class="fas fa-undo"></i>
+                        <span data-translate="reset-filters">Reset</span>
+                    </button>
+                    <button class="filter-btn" id="apply-filters">
+                        <i class="fas fa-check"></i>
+                        <span data-translate="apply-filters">Apply</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Quick Filters -->
+            <div class="quick-filters">
+                <div class="quick-filter active" data-filter="quick" value="best-sellers">
+                    <i class="fas fa-fire"></i>
+                    <span data-translate="best-sellers">Best Sellers</span>
+                </div>
+                <div class="quick-filter" data-filter="quick" value="new-arrivals">
+                    <i class="fas fa-star"></i>
+                    <span data-translate="new-arrivals">New Arrivals</span>
+                </div>
+                <div class="quick-filter" data-filter="quick" value="ethiopian">
+                    <i class="fas fa-flag"></i>
+                    <span data-translate="ethiopian-only">Ethiopian Only</span>
+                </div>
+                <div class="quick-filter" data-filter="quick" value="verified">
+                    <i class="fas fa-badge-check"></i>
+                    <span data-translate="verified-suppliers">Verified Suppliers</span>
+                </div>
+                <div class="quick-filter" data-filter="quick" value="samples">
+                    <i class="fas fa-vial"></i>
+                    <span data-translate="samples-available">Samples Available</span>
+                </div>
+            </div>
+            
+            <!-- Active Filter Tags -->
+            <div class="active-filters" id="active-filters">
+                <!-- Active filters will be dynamically added here -->
+                <button class="clear-all-filters" id="clear-all-filters" style="display: none;">
+                    <i class="fas fa-times"></i>
+                    <span data-translate="clear-all">Clear All</span>
+                </button>
+            </div>
+            
+            <div class="filter-container" id="filter-container">
+                <!-- Categories Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <div class="filter-group-title">
+                            <i class="fas fa-tags"></i>
+                            <span data-translate="categories">Categories</span>
+                        </div>
+                        <button class="filter-group-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-coffee-beans" data-filter="category" value="coffee-beans">
+                            <label for="cat-coffee-beans">
+                                <div class="filter-icon">
+                                    <i class="fas fa-coffee"></i>
+                                </div>
+                                <span>Coffee Beans</span>
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-ground-coffee" data-filter="category" value="ground-coffee">
+                            <label for="cat-ground-coffee">
+                                <div class="filter-icon">
+                                    <i class="fas fa-mortar-pestle"></i>
+                                </div>
+                                <span>Ground Coffee</span>
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-capsules" data-filter="category" value="capsules">
+                            <label for="cat-capsules">
+                                <div class="filter-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <span>Coffee Capsules</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coffee Regions Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <div class="filter-group-title">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-translate="coffee-regions">Coffee Regions</span>
+                        </div>
+                        <button class="filter-group-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="region-guji" data-filter="region" value="guji">
+                            <label for="region-guji">
+                                <div class="filter-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <span>Guji Region</span>
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="region-harrar" data-filter="region" value="harrar">
+                            <label for="region-harrar">
+                                <div class="filter-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <span>Harrar Region</span>
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="region-yirgachefe" data-filter="region" value="yirgachefe">
+                            <label for="region-yirgachefe">
+                                <div class="filter-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <span>Yirgachefe Region</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Price Range Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <div class="filter-group-title">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span data-translate="price-range">Price Range</span>
+                        </div>
+                        <button class="filter-group-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="filter-options">
+                        <div class="filter-range">
+                            <input type="number" id="min-price" placeholder="Min" min="0">
+                            <span>to</span>
+                            <input type="number" id="max-price" placeholder="Max" min="0">
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="price-under-20" data-filter="price" value="under-20">
+                            <label for="price-under-20">
+                                <div class="filter-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <span>Under Birr 20/kg</span>
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="price-20-30" data-filter="price" value="20-30">
+                            <label for="price-20-30">
+                                <div class="filter-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <span>Birr 20-30/kg</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Filter Results -->
+                <div class="filter-results">
+                    <span data-translate="showing">Showing</span>
+                    <span id="filtered-count">12</span>
+                    <span data-translate="of">of</span>
+                    <span id="total-count">24</span>
+                    <span data-translate="products">products</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Left Sidebar Toggle Button -->
+    <button class="left-sidebar-toggle">
+        <i class="fas fa-filter"></i>
+    </button>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content-with-sidebar">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-translate="hero-title">Discover Authentic Ethiopian Coffee</h1>
+                    <p data-translate="hero-subtitle">Direct from farmers to your cup. Explore our premium selection of Ethiopian coffee beans from the birthplace of coffee.</p>
+                    <a href="#coffees" class="btn" data-translate="hero-button">Explore Our Coffees</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coffee Showcase -->
+        <section class="coffee-showcase" id="coffees">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-translate="coffees-title">Our Premium Ethiopian Coffees</h2>
+                    <p data-translate="coffees-subtitle">Directly sourced from Ethiopian farmers. Each coffee has unique flavor profiles that reflect their region of origin.</p>
+                </div>
+                
+                <!-- Coffee Filter -->
+                <div class="coffee-filter">
+                    <button class="coffee-filter-btn active" data-filter="all">All Coffees</button>
+                    <button class="coffee-filter-btn" data-filter="guji">Guji Coffee</button>
+                    <button class="coffee-filter-btn" data-filter="harrar">Harrar Coffee</button>
+                    <button class="coffee-filter-btn" data-filter="yirgachefe">Yirgachefe Coffee</button>
+                    <button class="coffee-filter-btn" data-filter="sidama">Sidama Coffee</button>
+                </div>
+                
+                <div class="coffee-grid">
+                    <!-- Coffee 1 -->
+                    <div class="coffee-card" data-category="guji" data-id="premium-guji" 
+                         data-supplier="verified" data-country="ethiopia" data-variety="arabica" 
+                         data-processing="washed" data-cultivation="organic" data-packing="bag" 
+                         data-style="single" data-min-order="5" data-sample="true">
+                        <div class="coffee-image" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                            <div class="coffee-badge" data-translate="best-seller">Best Seller</div>
+                            <span class="supplier-badge trade-assurance">Trade Assurance</span>
+                            <span class="supplier-badge sample-available">Sample Available</span>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-title" data-translate="guji-title">Premium Guji Coffee</div>
+                            <div class="coffee-region" data-translate="guji-region-text">Guji Region</div>
+                            
+                            <!-- Supplier Information -->
+                            <div class="supplier-info">
+                                <div class="supplier-flag" style="background-color: #078930;"></div>
+                                <span>Ethiopian Farmers Cooperative</span>
+                                <span class="supplier-badge">Verified</span>
+                            </div>
+                            
+                            <div class="coffee-description" data-translate="guji-desc">Known for its complex flavor profiles with notes of citrus, bergamot, and stone fruits.</div>
+                            
+                            <!-- Unit Selection System -->
+                            <div class="unit-selection">
+                                <div class="unit-label">Select Unit:</div>
+                                <div class="unit-options">
+                                    <div class="unit-option active" data-unit="kg" data-price="18.99">Per kg</div>
+                                    <div class="unit-option" data-unit="bag-25" data-price="450.00">Per 25kg bag</div>
+                                    <div class="unit-option" data-unit="bag-60" data-price="1050.00">Per 60kg bag</div>
+                                </div>
+                                <div class="unit-price">Birr <span class="price-value">18.99</span></div>
+                                <div class="unit-conversion">(Base price: Birr 18.99/kg)</div>
+                                
+                                <div class="quantity-selector">
+                                    <div class="quantity-label">Quantity:</div>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn minus">-</button>
+                                        <input type="text" class="quantity-input" value="1" min="1">
+                                        <button class="quantity-btn plus">+</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="total-price">Total: Birr <span class="total-value">18.99</span></div>
+                            </div>
+                            
+                            <div class="coffee-actions">
+                                <button class="add-to-cart" data-translate="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Coffee 2 -->
+                    <div class="coffee-card" data-category="harrar" data-id="harrar-coffee">
+                        <div class="coffee-image" style="background-image: url('https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+                            <div class="coffee-badge" data-translate="popular">Popular</div>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-title" data-translate="harrar-title">Harrar Coffee</div>
+                            <div class="coffee-region" data-translate="harrar-region-text">Harrar Region</div>
+                            <div class="coffee-description" data-translate="harrar-desc">Famous for its dry-processed beans with complex, wine-like flavors and blueberry notes.</div>
+                            
+                            <!-- Unit Selection System -->
+                            <div class="unit-selection">
+                                <div class="unit-label">Select Unit:</div>
+                                <div class="unit-options">
+                                    <div class="unit-option active" data-unit="kg" data-price="17.50">Per kg</div>
+                                    <div class="unit-option" data-unit="bag-25" data-price="420.00">Per 25kg bag</div>
+                                    <div class="unit-option" data-unit="bag-60" data-price="980.00">Per 60kg bag</div>
+                                </div>
+                                <div class="unit-price">Birr <span class="price-value">17.50</span></div>
+                                <div class="unit-conversion">(Base price: Birr 17.50/kg)</div>
+                                
+                                <div class="quantity-selector">
+                                    <div class="quantity-label">Quantity:</div>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn minus">-</button>
+                                        <input type="text" class="quantity-input" value="1" min="1">
+                                        <button class="quantity-btn plus">+</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="total-price">Total: Birr <span class="total-value">17.50</span></div>
+                            </div>
+                            
+                            <div class="coffee-actions">
+                                <button class="add-to-cart" data-translate="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Coffee 3 -->
+                    <div class="coffee-card" data-category="yirgachefe" data-id="yirgachefe-coffee">
+                        <div class="coffee-image" style="background-image: url('https://coffeehunter.com/wp-content/uploads/2023/04/Red-cherry.png');">
+                            <div class="coffee-badge" data-translate="new">New</div>
+                        </div>
+                        <div class="coffee-info">
+                            <div class="coffee-title" data-translate="yirgachefe-title">Yirgachefe Coffee</div>
+                            <div class="coffee-region" data-translate="yirgachefe-region-text">Yirgachefe Region</div>
+                            <div class="coffee-description" data-translate="yirgachefe-desc">Renowned for its delicate body, bright acidity, and floral aroma with citrus notes.</div>
+                            
+                            <!-- Unit Selection System -->
+                            <div class="unit-selection">
+                                <div class="unit-label">Select Unit:</div>
+                                <div class="unit-options">
+                                    <div class="unit-option active" data-unit="kg" data-price="19.99">Per kg</div>
+                                    <div class="unit-option" data-unit="bag-25" data-price="480.00">Per 25kg bag</div>
+                                    <div class="unit-option" data-unit="bag-60" data-price="1120.00">Per 60kg bag</div>
+                                </div>
+                                <div class="unit-price">Birr <span class="price-value">19.99</span></div>
+                                <div class="unit-conversion">(Base price: Birr 19.99/kg)</div>
+                                
+                                <div class="quantity-selector">
+                                    <div class="quantity-label">Quantity:</div>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn minus">-</button>
+                                        <input type="text" class="quantity-input" value="1" min="1">
+                                        <button class="quantity-btn plus">+</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="total-price">Total: Birr <span class="total-value">19.99</span></div>
+                            </div>
+                            
+                            <div class="coffee-actions">
+                                <button class="add-to-cart" data-translate="add-to-cart">Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Section -->
+        <section class="cultural-section">
+            <div class="container">
+                <div class="cultural-content">
+                    <div class="cultural-text">
+                        <h2 data-translate="cultural-title">The Ethiopian Coffee Ceremony</h2>
+                        <p data-translate="cultural-p1">The Ethiopian coffee ceremony is a central part of Ethiopian culture and social life. It is a ritualized form of making and drinking coffee that can take several hours.</p>
+                        <p data-translate="cultural-p2">The ceremony is typically performed by a woman and involves roasting green coffee beans, grinding them, and brewing the coffee in a special pot called a jebena.</p>
+                        <p data-translate="cultural-p3">Guests are invited to enjoy the aromatic coffee along with traditional snacks like popcorn or roasted barley. The ceremony is a time for conversation, community, and connection.</p>
+                        <a href="#" class="btn" data-translate="cultural-button">Learn More</a>
+                    </div>
+                    <div class="cultural-image">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ethiopian Coffee Ceremony">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Have questions about our coffee or want to place a custom order? Get in touch with us!</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>Bole Road, Addis Ababa, Ethiopia</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+251 94 039 3855</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@BunaGebeyaethiopia.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="coffee-animation">
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+            <div class="coffee-bean"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Buna Gebeya Ethiopia</h3>
+                    <p data-translate="footer-desc">Bridging the gap between Ethiopian coffee farmers and global coffee lovers for mutual growth and authentic experiences.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-translate="shop">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-translate="all-coffees">All Coffees</a></li>
+                        <li><a href="#" data-translate="guji-region">Guji Region</a></li>
+                        <li><a href="#" data-translate="harrar-region">Harrar Region</a></li>
+                        <li><a href="#" data-translate="yirgachefe-region">Yirgachefe Region</a></li>
+                        <li><a href="#" data-translate="sidama-region">Sidama Region</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-translate="customer-service">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact" data-translate="contact">Contact Us</a></li>
+                        <li><a href="#" data-translate="shipping">Shipping Policy</a></li>
+                        <li><a href="#" data-translate="returns">Returns & Refunds</a></li>
+                        <li><a href="#" data-translate="faq">FAQ</a></li>
+                        <li><a href="#" data-translate="track">Track Your Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-translate="about">About Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-translate="story">Our Story</a></li>
+                        <li><a href="#" data-translate="farmers">Our Farmers</a></li>
+                        <li><a href="#" data-translate="sustainability">Sustainability</a></li>
+                        <li><a href="#" data-translate="press">Press</a></li>
+                        <li><a href="#" data-translate="careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Buna Gebeya Ethiopia. All rights reserved. | <span data-translate="tagline">The Birthplace of Coffee</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Buttons -->
+    <div class="footer-buttons">
+        <button class="footer-btn chat-us-btn">
+            <i class="fas fa-comments"></i>
+            <span data-translate="chat-us">Chat Us</span>
+        </button>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Modals -->
+    <!-- Enhanced Account Modal -->
+    <div class="account-modal">
+        <div class="account-header">
+            <h2 data-translate="account-title">Account</h2>
+            <button class="close-account"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="account-content">
+            <div class="account-options">
+                <div class="account-option active" data-option="buy">
+                    <i class="fas fa-shopping-bag"></i> 
+                    <span data-translate="buy-coffee">Buy Coffee</span>
+                </div>
+                <div class="account-option" data-option="sell">
+                    <i class="fas fa-store"></i> 
+                    <span data-translate="sell-coffee">Sell Coffee</span>
+                </div>
+            </div>
+            
+            <!-- Buy Coffee Form -->
+            <div class="account-form active" id="buy-form">
+                <div class="form-group">
+                    <label for="buy-license-tin">License TIN Number</label>
+                    <input type="text" id="buy-license-tin" class="form-control" placeholder="Enter your license TIN number">
+                </div>
+                <div class="form-group">
+                    <label for="buy-password">Password</label>
+                    <input type="password" id="buy-password" class="form-control" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <label for="buy-license-certificate">Upload License Certificate</label>
+                    <div class="file-upload-container">
+                        <input type="file" id="buy-license-certificate" class="file-upload-input" accept="image/*,.pdf" hidden>
+                        <div class="file-upload-area">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop your license certificate or <span class="browse-link">browse files</span></p>
+                            <small>Supported formats: JPG, PNG, PDF (Max 5MB)</small>
+                        </div>
+                        <div class="file-preview" id="license-preview" style="display: none;">
+                            <div class="preview-item">
+                                <i class="fas fa-file-image"></i>
+                                <span class="file-name"></span>
+                                <button type="button" class="remove-file"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="buy-email">Email</label>
+                    <input type="email" id="buy-email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="buy-phone">Phone Number</label>
+                    <input type="tel" id="buy-phone" class="form-control" placeholder="Enter your phone number">
+                </div>
+                
+                <div class="social-login">
+                    <p data-translate="or-login-with">Or login with</p>
+                    <div class="social-buttons">
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i>
+                        </button>
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="account-actions">
+                    <button class="btn-secondary" data-translate="cancel">Cancel</button>
+                    <button class="btn" data-translate="login">Login / Register</button>
+                </div>
+            </div>
+            
+            <!-- Sell Coffee Form -->
+            <div class="account-form" id="sell-form">
+                <div class="form-group">
+                    <label for="sell-name">Business Name</label>
+                    <input type="text" id="sell-name" class="form-control" placeholder="Enter your business name">
+                </div>
+                <div class="form-group">
+                    <label for="sell-license-tin">License TIN Number</label>
+                    <input type="text" id="sell-license-tin" class="form-control" placeholder="Enter your license TIN number">
+                </div>
+                <div class="form-group">
+                    <label for="sell-password">Password</label>
+                    <input type="password" id="sell-password" class="form-control" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <label for="sell-license-certificate">Upload License Certificate</label>
+                    <div class="file-upload-container">
+                        <input type="file" id="sell-license-certificate" class="file-upload-input" accept="image/*,.pdf" hidden>
+                        <div class="file-upload-area">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop your license certificate or <span class="browse-link">browse files</span></p>
+                            <small>Supported formats: JPG, PNG, PDF (Max 5MB)</small>
+                        </div>
+                        <div class="file-preview" id="sell-license-preview" style="display: none;">
+                            <div class="preview-item">
+                                <i class="fas fa-file-image"></i>
+                                <span class="file-name"></span>
+                                <button type="button" class="remove-file"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sell-email">Email</label>
+                    <input type="email" id="sell-email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="sell-phone">Phone Number</label>
+                    <input type="tel" id="sell-phone" class="form-control" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="sell-region">Coffee Region</label>
+                    <select id="sell-region" class="form-control">
+                        <option value="">Select your coffee region</option>
+                        <option value="guji">Guji Region</option>
+                        <option value="harrar">Harrar Region</option>
+                        <option value="yirgachefe">Yirgachefe Region</option>
+                        <option value="sidama">Sidama Region</option>
+                        <option value="other">Other Region</option>
+                    </select>
+                </div>
+                <div class="account-actions">
+                    <button class="btn-secondary" data-translate="cancel">Cancel</button>
+                    <button class="btn" data-translate="register-seller">Register as Seller</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Wishlist Modal -->
+    <div class="wishlist-modal">
+        <div class="wishlist-header">
+            <h2 data-translate="wishlist-title">My Wishlist</h2>
+            <button class="close-wishlist"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div class="wishlist-items">
+            <!-- Wishlist items will be dynamically added here -->
+            <div class="empty-wishlist">
+                <i class="far fa-heart"></i>
+                <p data-translate="empty-wishlist">Your wishlist is empty</p>
+                <p data-translate="add-to-wishlist">Add coffees you love to your wishlist</p>
+            </div>
+        </div>
+        
+        <div class="wishlist-footer">
+            <div class="wishlist-actions">
+                <button class="wishlist-clear" data-translate="clear-wishlist">Clear Wishlist</button>
+                <button class="wishlist-share">
+                    <i class="fas fa-share-alt"></i>
+                    <span data-translate="share-wishlist">Share</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h2 data-translate="cart-title">Shopping Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        
+        <div class="cart-total">
+            <span data-translate="total">Total:</span>
+            <span>Birr 0.00</span>
+        </div>
+        
+        <button class="checkout-btn" data-translate="checkout">Proceed to Checkout</button>
+    </div>
+
+    <!-- Chat Modal -->
+    <div class="chat-modal">
+        <div class="chat-header">
+            <h3 data-translate="chat-title">Chat with Buna Gebeya</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages">
+            <div class="message received">
+                <p data-translate="welcome-message">Hello! Welcome to Buna Gebeya Ethiopia. How can we help you today?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message..." data-translate="message-placeholder">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/utils.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
